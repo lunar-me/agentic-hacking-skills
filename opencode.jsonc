@@ -1,0 +1,118 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["@smart-coders-hq/opencode-model-fallback"],
+  "mcp": {
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "@playwright/mcp@latest"],
+      "enabled": true
+    },
+    "fetch": {
+      "type": "local",
+      "command": ["uvx", "mcp-server-fetch"],
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\<Your-Username>\\Desktop\\Projects"],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    },
+    "git": {
+      "type": "local",
+      "command": ["uvx", "mcp-server-git", "--repository", "C:\\Users\\<Your-Username>\\Desktop\\Projects"],
+      "enabled": true
+    },
+    "time": {
+      "type": "local",
+      "command": ["uvx", "mcp-server-time"],
+      "enabled": true
+    },
+    "obsidian": {
+      "type": "local",
+      "command": ["cmd", "/c", "C:\\Users\\<Your-Username>\\.config\\opencode\\seekstone.bat"],
+      "enabled": true
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "pub-mcp": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "pub-mcp", "--stdio"],
+      "enabled": true
+    },
+    "ui-ux-pro": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "ui-ux-pro-mcp", "--stdio"],
+      "enabled": true
+    },
+    "web-developer": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "web-developer-mcp"],
+      "enabled": true
+    },
+    "classmcp": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "classmcp"],
+      "enabled": true
+    },
+    "ui-ux-suite": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "ui-ux-suite", "--mcp"],
+      "enabled": true
+    },
+    "github": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "enabled": true
+    },
+    "supabase": {
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:SUPABASE_ACCESS_TOKEN}"
+      },
+      "enabled": true
+    },
+    "cloudflare": {
+      "type": "remote",
+      "url": "https://mcp.cloudflare.com/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:CLOUDFLARE_API_TOKEN}"
+      },
+      "enabled": true
+    },
+    "wsl-security-tools": {
+      "type": "local",
+      "command": ["node", "C:\\Users\\<Your-Username>\\.config\\opencode\\mcp-servers\\wsl-security-tools\\index.js"],
+      "enabled": true
+    },
+    "shodan": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "@burtthecoder/mcp-shodan"],
+      "env": {
+        "SHODAN_API_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "enabled": true
+    },
+    "burp": {
+      "type": "sse",
+      "url": "http://127.0.0.1:9876/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/",
+      "enabled": true
+    }
+  }
+}
