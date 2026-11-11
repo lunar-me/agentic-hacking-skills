@@ -513,7 +513,7 @@ Systematic approach:
 
 ## Phase 3: Dynamic Analysis & Fuzzing
 
-**When source code NOT available, or to confirm code review findings.**
+**When source code is NOT available, or to confirm code review findings.**
 
 ### 3.1 Black-Box Fuzzing
 
