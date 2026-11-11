@@ -391,7 +391,7 @@ Total dependencies: 1,000+
 # Reality:
 npm install downloads 1,000+ packages
 Only 20 are reviewed
-Other 980 run arbitrary code on your machine
+The other 980 run arbitrary code on your machine
 ```
 
 **2. Trusted Parent Package:**
